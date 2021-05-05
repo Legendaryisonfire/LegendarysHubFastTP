@@ -1,0 +1,964 @@
+----Made By Legendary#9999------------Enjoy!
+local ScreenGui = Instance.new("ScreenGui")
+local ParkChanger = Instance.new("Frame")
+local FastTP = Instance.new("TextLabel")
+local Slot1 = Instance.new("TextLabel")
+local Slot2 = Instance.new("TextLabel")
+local Slot3 = Instance.new("TextLabel")
+local eastslot1 = Instance.new("TextButton")
+local eastslot2 = Instance.new("TextButton")
+local eastslot3 = Instance.new("TextButton")
+local westslot1 = Instance.new("TextButton")
+local westslot2 = Instance.new("TextButton")
+local westslot3 = Instance.new("TextButton")
+local recslot1 = Instance.new("TextButton")
+local recslot2 = Instance.new("TextButton")
+local recslot3 = Instance.new("TextButton")
+local lobbyslot1 = Instance.new("TextButton")
+local lobbyslot2 = Instance.new("TextButton")
+local lobbyslot3 = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+ParkChanger.Name = "ParkChanger"
+ParkChanger.Parent = ScreenGui
+ParkChanger.Active = true
+ParkChanger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ParkChanger.Position = UDim2.new(0.391733587, 0, 0.336609364, 0)
+ParkChanger.Size = UDim2.new(0, 459, 0, 342)
+ParkChanger.Active = true
+ParkChanger.Draggable = true
+
+FastTP.Name = "FastTP"
+FastTP.Parent = ParkChanger
+FastTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FastTP.Size = UDim2.new(0, 459, 0, 58)
+FastTP.Font = Enum.Font.GothamBold
+FastTP.Text = "Fast TP"
+FastTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+FastTP.TextSize = 30.000
+
+Slot1.Name = "Slot1"
+Slot1.Parent = ParkChanger
+Slot1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Slot1.Position = UDim2.new(0.0145053277, 0, 0.170648456, 0)
+Slot1.Size = UDim2.new(0, 137, 0, 55)
+Slot1.Font = Enum.Font.GothamBlack
+Slot1.Text = "Slot 1"
+Slot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Slot1.TextSize = 25.000
+
+Slot2.Name = "Slot2"
+Slot2.Parent = ParkChanger
+Slot2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Slot2.Position = UDim2.new(0.346788138, 0, 0.16772449, 0)
+Slot2.Size = UDim2.new(0, 142, 0, 55)
+Slot2.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Slot2.Font = Enum.Font.GothamBold
+Slot2.Text = "Slot 2"
+Slot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Slot2.TextSize = 25.000
+
+Slot3.Name = "Slot3"
+Slot3.Parent = ParkChanger
+Slot3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Slot3.Position = UDim2.new(0.685218573, 0, 0.1706485, 0)
+Slot3.Size = UDim2.new(0, 137, 0, 55)
+Slot3.Font = Enum.Font.GothamBold
+Slot3.Text = "Slot 3"
+Slot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Slot3.TextSize = 25.000
+
+eastslot1.Name = "eastslot1"
+eastslot1.Parent = ParkChanger
+eastslot1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+eastslot1.Position = UDim2.new(0.0147991544, 0, 0.3301, 0)
+eastslot1.Size = UDim2.new(0, 137, 0, 50)
+eastslot1.Font = Enum.Font.GothamBold
+eastslot1.Text = "EastSide"
+eastslot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+eastslot1.TextSize = 23.000
+eastslot1.MouseButton1Down:connect(function()
+	local slot = 1
+	local option = "east"
+
+
+	--// Fast TP made by cj#1211 \\--
+	--options--
+
+	--west
+	--east
+	--rec
+	--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	local east = 591582661
+	local west = 593223204
+	local rec = 594402678
+	local lobby = 856966839
+
+
+
+
+	local Player = game.Players.LocalPlayer
+	local TPService = game:GetService("TeleportService")
+	local Storage = game:GetService("ReplicatedStorage")
+	local v16 = TPService:GetLocalPlayerTeleportData();
+	wait(1)
+
+	if option == 'west' then
+		if game.PlaceId == west then return end
+	elseif option == 'east' then 
+		if game.PlaceId == east then return end
+	elseif option == 'rec' then 
+		if game.PlaceId == rec then return end
+	elseif option == 'lobby' then 
+		if game.PlaceId == lobby then return end
+	end
+
+	if option == 'west' then
+		TPService:Teleport(west, Player, slot);
+	elseif option == 'east' then
+		TPService:Teleport(east, Player, slot);
+	elseif option == 'rec' then 
+		TPService:Teleport(rec, Player, slot);
+	elseif option == 'lobby' then 
+		TPService:Teleport(lobby, Player, slot);
+	end
+end)
+
+eastslot2.Name = "eastslot2"
+eastslot2.Parent = ParkChanger
+eastslot2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+eastslot2.Position = UDim2.new(0.346489161, 0, 0.3301, 0)
+eastslot2.Size = UDim2.new(0, 142, 0, 50)
+eastslot2.Font = Enum.Font.GothamBold
+eastslot2.Text = "EastSide"
+eastslot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+eastslot2.TextSize = 23.000
+eastslot2.MouseButton1Down:connect(function()
+	local slot = 2
+	local option = "east"
+
+
+	--// Fast TP made by cj#1211 \\--
+
+	--options--
+
+	--west
+	--east
+	--rec
+	--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	local east = 591582661
+	local west = 593223204
+	local rec = 594402678
+	local lobby = 856966839
+
+
+
+
+	local Player = game.Players.LocalPlayer
+	local TPService = game:GetService("TeleportService")
+	local Storage = game:GetService("ReplicatedStorage")
+	local v16 = TPService:GetLocalPlayerTeleportData();
+	wait(1)
+
+	if option == 'west' then
+		if game.PlaceId == west then return end
+	elseif option == 'east' then 
+		if game.PlaceId == east then return end
+	elseif option == 'rec' then 
+		if game.PlaceId == rec then return end
+	elseif option == 'lobby' then 
+		if game.PlaceId == lobby then return end
+	end
+	if option == 'west' then
+		TPService:Teleport(west, Player, slot);
+	elseif option == 'east' then
+	    TPService:Teleport(east, Player, slot);
+	elseif option == 'rec' then 
+		TPService:Teleport(rec, Player, slot);
+	elseif option == 'lobby' then 
+		TPService:Teleport(lobby, Player, slot);
+	end
+	end)
+
+eastslot3.Name = "eastslot3"
+eastslot3.Parent = ParkChanger
+eastslot3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+eastslot3.Position = UDim2.new(0.685218573, 0, 0.3301, 0)
+eastslot3.Size = UDim2.new(0, 137, 0, 50)
+eastslot3.Font = Enum.Font.GothamBold
+eastslot3.Text = "EastSide"
+eastslot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+eastslot3.TextSize = 23.000
+eastslot3.MouseButton1Down:connect(function()	
+		local slot = 3
+		local option = "east"
+
+
+		--// Fast TP made by cj#1211 \\--
+
+		--options--
+
+		--west
+		--east
+		--rec
+		--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		local east = 591582661
+		local west = 593223204
+		local rec = 594402678
+		local lobby = 856966839
+
+
+
+
+		local Player = game.Players.LocalPlayer
+		local TPService = game:GetService("TeleportService")
+		local Storage = game:GetService("ReplicatedStorage")
+		local v16 = TPService:GetLocalPlayerTeleportData();
+		wait(1)
+
+		if option == 'west' then
+			if game.PlaceId == west then return end
+		elseif option == 'east' then 
+			if game.PlaceId == east then return end
+		elseif option == 'rec' then 
+			if game.PlaceId == rec then return end
+		elseif option == 'lobby' then 
+			if game.PlaceId == lobby then return end
+		end
+
+		if option == 'west' then
+			TPService:Teleport(west, Player, slot);
+		elseif option == 'east' then
+			TPService:Teleport(east, Player, slot);
+		elseif option == 'rec' then 
+			TPService:Teleport(rec, Player, slot);
+		elseif option == 'lobby' then 
+			TPService:Teleport(lobby, Player, slot);
+		end
+		end)
+
+		westslot1.Name = "westslot1"
+		westslot1.Parent = ParkChanger
+		westslot1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		westslot1.Position = UDim2.new(0.0147991544, 0, 0.474432677, 0)
+		westslot1.Size = UDim2.new(0, 137, 0, 50)
+		westslot1.Font = Enum.Font.GothamBold
+		westslot1.Text = "WestSide"
+		westslot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+		westslot1.TextSize = 23.000
+		westslot1.MouseButton1Down:connect(function()		
+			local slot = 1
+			local option = "west"
+
+
+			--// Fast TP made by cj#1211 \\--
+
+			--options--
+
+			--west
+			--east
+			--rec
+			--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			local east = 591582661
+			local west = 593223204
+			local rec = 594402678
+			local lobby = 856966839
+
+
+
+
+			local Player = game.Players.LocalPlayer
+			local TPService = game:GetService("TeleportService")
+			local Storage = game:GetService("ReplicatedStorage")
+			local v16 = TPService:GetLocalPlayerTeleportData();
+			wait(1)
+
+			if option == 'west' then
+				if game.PlaceId == west then return end
+			elseif option == 'east' then 
+				if game.PlaceId == east then return end
+			elseif option == 'rec' then 
+				if game.PlaceId == rec then return end
+			elseif option == 'lobby' then 
+				if game.PlaceId == lobby then return end
+			end
+
+			if option == 'west' then
+				TPService:Teleport(west, Player, slot);
+			elseif option == 'east' then
+				TPService:Teleport(east, Player, slot);
+			elseif option == 'rec' then 
+				TPService:Teleport(rec, Player, slot);
+			elseif option == 'lobby' then 
+				TPService:Teleport(lobby, Player, slot);
+			end
+			end)
+
+westslot2.Name = "westslot2"
+westslot2.Parent = ParkChanger
+westslot2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+westslot2.Position = UDim2.new(0.346788108, 0, 0.474432647, 0)
+westslot2.Size = UDim2.new(0, 142, 0, 50)
+westslot2.Font = Enum.Font.GothamBold
+westslot2.Text = "WestSide"
+westslot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+westslot2.TextSize = 23.000
+westslot2.MouseButton1Down:connect(function()
+				local slot = 2
+				local option = "west"
+
+
+				--// Fast TP made by cj#1211 \\--
+
+				--options--
+
+				--west
+				--east
+				--rec
+				--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				local east = 591582661
+				local west = 593223204
+				local rec = 594402678
+				local lobby = 856966839
+
+
+
+
+				local Player = game.Players.LocalPlayer
+				local TPService = game:GetService("TeleportService")
+				local Storage = game:GetService("ReplicatedStorage")
+				local v16 = TPService:GetLocalPlayerTeleportData();
+				wait(1)
+
+				if option == 'west' then
+					if game.PlaceId == west then return end
+				elseif option == 'east' then 
+					if game.PlaceId == east then return end
+				elseif option == 'rec' then 
+					if game.PlaceId == rec then return end
+				elseif option == 'lobby' then 
+					if game.PlaceId == lobby then return end
+				end
+
+				if option == 'west' then
+					TPService:Teleport(west, Player, slot);
+				elseif option == 'east' then
+					TPService:Teleport(east, Player, slot);
+				elseif option == 'rec' then 
+					TPService:Teleport(rec, Player, slot);
+				elseif option == 'lobby' then 
+					TPService:Teleport(lobby, Player, slot);
+				end
+				end)
+
+westslot3.Name = "westslot3"
+westslot3.Parent = ParkChanger
+westslot3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+westslot3.Position = UDim2.new(0.685218573, 0, 0.471508682, 0)
+westslot3.Size = UDim2.new(0, 137, 0, 50)
+westslot3.Font = Enum.Font.GothamBold
+westslot3.Text = "WestSide"
+westslot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+westslot3.TextSize = 23.000
+westslot3.MouseButton1Down:connect(function()				
+					local slot = 3
+					local option = "west"
+
+
+					--// Fast TP made by cj#1211 \\--
+
+					--options--
+
+					--west
+					--east
+					--rec
+					--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					local east = 591582661
+					local west = 593223204
+					local rec = 594402678
+					local lobby = 856966839
+
+
+
+
+					local Player = game.Players.LocalPlayer
+					local TPService = game:GetService("TeleportService")
+					local Storage = game:GetService("ReplicatedStorage")
+					local v16 = TPService:GetLocalPlayerTeleportData();
+					wait(1)
+
+					if option == 'west' then
+						if game.PlaceId == west then return end
+					elseif option == 'east' then 
+						if game.PlaceId == east then return end
+					elseif option == 'rec' then 
+						if game.PlaceId == rec then return end
+					elseif option == 'lobby' then 
+						if game.PlaceId == lobby then return end
+					end
+
+					if option == 'west' then
+						TPService:Teleport(west, Player, slot);
+					elseif option == 'east' then
+						TPService:Teleport(east, Player, slot);
+					elseif option == 'rec' then 
+						TPService:Teleport(rec, Player, slot);
+					elseif option == 'lobby' then 
+						TPService:Teleport(lobby, Player, slot);
+					end
+					end)
+
+recslot1.Name = "recslot1"
+recslot1.Parent = ParkChanger
+recslot1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+recslot1.Position = UDim2.new(0.0147992, 0, 0.618765295, 0)
+recslot1.Size = UDim2.new(0, 137, 0, 50)
+recslot1.Font = Enum.Font.GothamBold
+recslot1.Text = "Rec Center"
+recslot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+recslot1.TextSize = 23.000
+recslot1.MouseButton1Down:connect(function()					
+						local slot = 1
+						local option = "rec"
+
+
+						--// Fast TP made by cj#1211 \\--
+
+						--options--
+
+						--west
+						--east
+						--rec
+						--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						local east = 591582661
+						local west = 593223204
+						local rec = 594402678
+						local lobby = 856966839
+
+
+
+
+						local Player = game.Players.LocalPlayer
+						local TPService = game:GetService("TeleportService")
+						local Storage = game:GetService("ReplicatedStorage")
+						local v16 = TPService:GetLocalPlayerTeleportData();
+						wait(1)
+
+						if option == 'west' then
+							if game.PlaceId == west then return end
+						elseif option == 'east' then 
+							if game.PlaceId == east then return end
+						elseif option == 'rec' then 
+							if game.PlaceId == rec then return end
+						elseif option == 'lobby' then 
+							if game.PlaceId == lobby then return end
+						end
+
+						if option == 'west' then
+							TPService:Teleport(west, Player, slot);
+						elseif option == 'east' then
+							TPService:Teleport(east, Player, slot);
+						elseif option == 'rec' then 
+							TPService:Teleport(rec, Player, slot);
+						elseif option == 'lobby' then 
+							TPService:Teleport(lobby, Player, slot);
+						end
+						end)
+
+recslot2.Name = "recslot2"
+recslot2.Parent = ParkChanger
+recslot2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+recslot2.Position = UDim2.new(0.346489161, 0, 0.618765295, 0)
+recslot2.Size = UDim2.new(0, 142, 0, 50)
+recslot2.Font = Enum.Font.GothamBold
+recslot2.Text = "Rec Center"
+recslot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+recslot2.TextSize = 23.000
+recslot2.MouseButton1Down:connect(function()
+							local slot = 2
+							local option = "rec"
+
+
+							--// Fast TP made by cj#1211 \\--
+
+							--options--
+
+							--west
+							--east
+							--rec
+							--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							local east = 591582661
+							local west = 593223204
+							local rec = 594402678
+							local lobby = 856966839
+
+
+
+
+							local Player = game.Players.LocalPlayer
+							local TPService = game:GetService("TeleportService")
+							local Storage = game:GetService("ReplicatedStorage")
+							local v16 = TPService:GetLocalPlayerTeleportData();
+							wait(1)
+
+							if option == 'west' then
+								if game.PlaceId == west then return end
+							elseif option == 'east' then 
+								if game.PlaceId == east then return end
+							elseif option == 'rec' then 
+								if game.PlaceId == rec then return end
+							elseif option == 'lobby' then 
+								if game.PlaceId == lobby then return end
+							end
+
+							if option == 'west' then
+								TPService:Teleport(west, Player, slot);
+							elseif option == 'east' then
+								TPService:Teleport(east, Player, slot);
+							elseif option == 'rec' then 
+								TPService:Teleport(rec, Player, slot);
+							elseif option == 'lobby' then 
+								TPService:Teleport(lobby, Player, slot);
+							end
+							end)
+recslot3.Name = "recslot3"
+recslot3.Parent = ParkChanger
+recslot3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+recslot3.Position = UDim2.new(0.685218573, 0, 0.618765295, 0)
+recslot3.Size = UDim2.new(0, 137, 0, 50)
+recslot3.Font = Enum.Font.GothamBold
+recslot3.Text = "Rec Center"
+recslot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+recslot3.TextSize = 23.000
+recslot3.MouseButton1Down:connect(function()
+								local slot = 3
+								local option = "rec"
+
+
+								--// Fast TP made by cj#1211 \\--
+
+								--options--
+
+								--west
+								--east
+								--rec
+								--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								local east = 591582661
+								local west = 593223204
+								local rec = 594402678
+								local lobby = 856966839
+
+
+
+
+								local Player = game.Players.LocalPlayer
+								local TPService = game:GetService("TeleportService")
+								local Storage = game:GetService("ReplicatedStorage")
+								local v16 = TPService:GetLocalPlayerTeleportData();
+								wait(1)
+
+								if option == 'west' then
+									if game.PlaceId == west then return end
+								elseif option == 'east' then 
+									if game.PlaceId == east then return end
+								elseif option == 'rec' then 
+									if game.PlaceId == rec then return end
+								elseif option == 'lobby' then 
+									if game.PlaceId == lobby then return end
+								end
+
+								if option == 'west' then
+									TPService:Teleport(west, Player, slot);
+								elseif option == 'east' then
+									TPService:Teleport(east, Player, slot);
+								elseif option == 'rec' then 
+									TPService:Teleport(rec, Player, slot);
+								elseif option == 'lobby' then 
+									TPService:Teleport(lobby, Player, slot);
+								end
+								end)
+lobbyslot1.Name = "lobbyslot1"
+lobbyslot1.Parent = ParkChanger
+lobbyslot1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+lobbyslot1.Position = UDim2.new(0.0141946077, 0, 0.764964104, 0)
+lobbyslot1.Size = UDim2.new(0, 137, 0, 50)
+lobbyslot1.Font = Enum.Font.GothamBold
+lobbyslot1.Text = "Lobby"
+lobbyslot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+lobbyslot1.TextSize = 23.000
+lobbyslot1.MouseButton1Down:connect(function()
+									local slot = 1
+									local option = "lobby"
+
+
+									--// Fast TP made by cj#1211 \\--
+
+									--options--
+
+									--west
+									--east
+									--rec
+									--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									local east = 591582661
+									local west = 593223204
+									local rec = 594402678
+									local lobby = 856966839
+
+
+
+
+									local Player = game.Players.LocalPlayer
+									local TPService = game:GetService("TeleportService")
+									local Storage = game:GetService("ReplicatedStorage")
+									local v16 = TPService:GetLocalPlayerTeleportData();
+									wait(1)
+
+									if option == 'west' then
+										if game.PlaceId == west then return end
+									elseif option == 'east' then 
+										if game.PlaceId == east then return end
+									elseif option == 'rec' then 
+										if game.PlaceId == rec then return end
+									elseif option == 'lobby' then 
+										if game.PlaceId == lobby then return end
+									end
+
+									if option == 'west' then
+										TPService:Teleport(west, Player, slot);
+									elseif option == 'east' then
+										TPService:Teleport(east, Player, slot);
+									elseif option == 'rec' then 
+										TPService:Teleport(rec, Player, slot);
+									elseif option == 'lobby' then 
+										TPService:Teleport(lobby, Player, slot);
+									end
+									end)
+
+lobbyslot2.Name = "lobbyslot2"
+lobbyslot2.Parent = ParkChanger
+lobbyslot2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+lobbyslot2.Position = UDim2.new(0.345349282, 0, 0.764964223, 0)
+lobbyslot2.Size = UDim2.new(0, 142, 0, 50)
+lobbyslot2.Font = Enum.Font.GothamBold
+lobbyslot2.Text = "Lobby"
+lobbyslot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+lobbyslot2.TextSize = 23.000
+lobbyslot2.MouseButton1Down:connect(function()
+										local slot = 2
+										local option = "lobby"
+
+
+										--// Fast TP made by cj#1211 \\--
+
+										--options--
+
+										--west
+										--east
+										--rec
+										--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										local east = 591582661
+										local west = 593223204
+										local rec = 594402678
+										local lobby = 856966839
+
+
+
+
+										local Player = game.Players.LocalPlayer
+										local TPService = game:GetService("TeleportService")
+										local Storage = game:GetService("ReplicatedStorage")
+										local v16 = TPService:GetLocalPlayerTeleportData();
+										wait(1)
+
+										if option == 'west' then
+											if game.PlaceId == west then return end
+										elseif option == 'east' then 
+											if game.PlaceId == east then return end
+										elseif option == 'rec' then 
+											if game.PlaceId == rec then return end
+										elseif option == 'lobby' then 
+											if game.PlaceId == lobby then return end
+										end
+
+										if option == 'west' then
+											TPService:Teleport(west, Player, slot);
+										elseif option == 'east' then
+											TPService:Teleport(east, Player, slot);
+										elseif option == 'rec' then 
+											TPService:Teleport(rec, Player, slot);
+										elseif option == 'lobby' then 
+											TPService:Teleport(lobby, Player, slot);
+										end
+										end)
+
+lobbyslot3.Name = "lobbyslot3"
+lobbyslot3.Parent = ParkChanger
+lobbyslot3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+lobbyslot3.Position = UDim2.new(0.685218573, 0, 0.764964223, 0)
+lobbyslot3.Size = UDim2.new(0, 137, 0, 50)
+lobbyslot3.Font = Enum.Font.GothamBold
+lobbyslot3.Text = "Lobby"
+lobbyslot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+lobbyslot3.TextSize = 23.000
+lobbyslot3.MouseButton1Down:connect(function()
+											local slot = 3
+											local option = "lobby"
+
+
+											--// Fast TP made by cj#1211 \\--
+
+											--options--
+
+											--west
+											--east
+											--rec
+											--lobby
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											local east = 591582661
+											local west = 593223204
+											local rec = 594402678
+											local lobby = 856966839
+
+
+
+
+											local Player = game.Players.LocalPlayer
+											local TPService = game:GetService("TeleportService")
+											local Storage = game:GetService("ReplicatedStorage")
+											local v16 = TPService:GetLocalPlayerTeleportData();
+											wait(1)
+
+											if option == 'west' then
+												if game.PlaceId == west then return end
+											elseif option == 'east' then 
+												if game.PlaceId == east then return end
+											elseif option == 'rec' then 
+												if game.PlaceId == rec then return end
+											elseif option == 'lobby' then 
+												if game.PlaceId == lobby then return end
+											end
+
+											if option == 'west' then
+												TPService:Teleport(west, Player, slot);
+											elseif option == 'east' then
+												TPService:Teleport(east, Player, slot);
+											elseif option == 'rec' then 
+												TPService:Teleport(rec, Player, slot);
+											elseif option == 'lobby' then 
+												TPService:Teleport(lobby, Player, slot);
+											end
+											end)
+close.Name = "close"
+close.Parent = ParkChanger
+close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+close.Position = UDim2.new(0, 0, 0.909356654, 0)
+close.Size = UDim2.new(0, 459, 0, 31)
+close.Font = Enum.Font.GothamBold
+close.Text = "Close"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 30.000
+close.MouseButton1Down:connect(function()
+	ParkChanger.Visible = false
+	openmain.Visible = true
+end)
+-- Scripts:
+
+local function DXSD_fake_script() -- ParkChanger.LocalScript 
+	local script = Instance.new('LocalScript', ParkChanger)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1) do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+	
+end
+coroutine.wrap(DXSD_fake_script)()
