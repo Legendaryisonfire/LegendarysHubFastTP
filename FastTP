@@ -32,12 +32,12 @@ ParkChanger.Size = UDim2.new(0, 459, 0, 342)
 ParkChanger.Active = true
 ParkChanger.Draggable = true
 
-FastTP.Name = "FastTP By Legendary#9999"
+FastTP.Name = "FastTP"
 FastTP.Parent = ParkChanger
 FastTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 FastTP.Size = UDim2.new(0, 459, 0, 58)
 FastTP.Font = Enum.Font.GothamBold
-FastTP.Text = "Fast TP"
+FastTP.Text = "Fast TP By Legendary#9999"
 FastTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 FastTP.TextSize = 30.000
 
