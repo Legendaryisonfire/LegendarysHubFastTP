@@ -32,7 +32,7 @@ ParkChanger.Size = UDim2.new(0, 459, 0, 342)
 ParkChanger.Active = true
 ParkChanger.Draggable = true
 
-FastTP.Name = "FastTP"
+FastTP.Name = "FastTP By Legendary#9999"
 FastTP.Parent = ParkChanger
 FastTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 FastTP.Size = UDim2.new(0, 459, 0, 58)
