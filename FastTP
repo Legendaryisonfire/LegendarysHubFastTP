@@ -37,7 +37,7 @@ FastTP.Parent = ParkChanger
 FastTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 FastTP.Size = UDim2.new(0, 459, 0, 58)
 FastTP.Font = Enum.Font.GothamBold
-FastTP.Text = "RBW2 Fast TP By Legendary#7357"
+FastTP.Text = "Fast TP By Legendary#7357"
 FastTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 FastTP.TextSize = 30.000
 
